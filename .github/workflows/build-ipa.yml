@@ -5,19 +5,16 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  workflow_dispatch: # Allows manual trigger with 1 click from GitHub UI!
+  workflow_dispatch:
 
 jobs:
   build-ipa:
     name: Compile & Package IPA on macOS
-    runs-on: macos-14 # Free Apple Silicon runner with native Xcode
+    runs-on: macos-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      - name: Select Xcode Version
-        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
 
       - name: Show Xcode Version
         run: xcodebuild -version
@@ -40,13 +37,8 @@ jobs:
         run: |
           cd ios
           mkdir -p Payload
-          # Copy compiled .app bundle into Payload directory
           cp -r build/Build/Products/Release-iphoneos/TetherAssistant.app Payload/
-          
-          # Create IPA archive
           zip -r TetherAssistant.ipa Payload
-          
-          # Verify IPA contents
           ls -lh TetherAssistant.ipa
 
       - name: Upload Sideloadable IPA Artifact
@@ -55,4 +47,3 @@ jobs:
           name: TetherAssistant-iOS-IPA
           path: ios/TetherAssistant.ipa
           retention-days: 14
-

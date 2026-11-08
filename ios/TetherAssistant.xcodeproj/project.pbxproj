@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA010001 /* TetherAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020001 /* TetherAssistantApp.swift */; };
+		AA010002 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020002 /* AppContainer.swift */; };
+		AA010003 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020003 /* Theme.swift */; };
+		AA010004 /* ThermalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020004 /* ThermalState.swift */; };
+		AA010005 /* BatterySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020005 /* BatterySnapshot.swift */; };
+		AA010006 /* NetworkSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020006 /* NetworkSnapshot.swift */; };
+		AA010007 /* TetherSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020007 /* TetherSession.swift */; };
+		AA010008 /* ThermalMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020008 /* ThermalMonitorService.swift */; };
+		AA010009 /* BatteryMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020009 /* BatteryMonitorService.swift */; };
+		AA010010 /* NetworkDiagnosticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020010 /* NetworkDiagnosticsService.swift */; };
+		AA010011 /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020011 /* SessionRepository.swift */; };
+		AA010012 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020012 /* DashboardViewModel.swift */; };
+		AA010013 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020013 /* MainTabView.swift */; };
+		AA010014 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020014 /* DashboardView.swift */; };
+		AA010015 /* SetupGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020015 /* SetupGuideView.swift */; };
+		AA010016 /* DeviceHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020016 /* DeviceHealthView.swift */; };
+		AA010017 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020017 /* HistoryView.swift */; };
+		AA010018 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA020018 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA020000 /* TetherAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetherAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA020001 /* TetherAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetherAssistantApp.swift; sourceTree = "<group>"; };
+		AA020002 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		AA020003 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AA020004 /* ThermalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalState.swift; sourceTree = "<group>"; };
+		AA020005 /* BatterySnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterySnapshot.swift; sourceTree = "<group>"; };
+		AA020006 /* NetworkSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSnapshot.swift; sourceTree = "<group>"; };
+		AA020007 /* TetherSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetherSession.swift; sourceTree = "<group>"; };
+		AA020008 /* ThermalMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalMonitorService.swift; sourceTree = "<group>"; };
+		AA020009 /* BatteryMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryMonitorService.swift; sourceTree = "<group>"; };
+		AA020010 /* NetworkDiagnosticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDiagnosticsService.swift; sourceTree = "<group>"; };
+		AA020011 /* SessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRepository.swift; sourceTree = "<group>"; };
+		AA020012 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		AA020013 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AA020014 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		AA020015 /* SetupGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupGuideView.swift; sourceTree = "<group>"; };
+		AA020016 /* DeviceHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHealthView.swift; sourceTree = "<group>"; };
+		AA020017 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		AA020018 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA020019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA030001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA040001 = {
+			isa = PBXGroup;
+			children = (
+				AA040002 /* TetherAssistant */,
+				AA040009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA040002 /* TetherAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				AA040003 /* App */,
+				AA040004 /* Core */,
+				AA040005 /* Models */,
+				AA040006 /* Services */,
+				AA040007 /* ViewModels */,
+				AA040008 /* Views */,
+				AA040010 /* Resources */,
+			);
+			path = TetherAssistant;
+			sourceTree = "<group>";
+		};
+		AA040003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA020001 /* TetherAssistantApp.swift */,
+				AA020002 /* AppContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA040004 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA020003 /* Theme.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AA040005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA020004 /* ThermalState.swift */,
+				AA020005 /* BatterySnapshot.swift */,
+				AA020006 /* NetworkSnapshot.swift */,
+				AA020007 /* TetherSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA040006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA020008 /* ThermalMonitorService.swift */,
+				AA020009 /* BatteryMonitorService.swift */,
+				AA020010 /* NetworkDiagnosticsService.swift */,
+				AA020011 /* SessionRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA040007 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA020012 /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA040008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA020013 /* MainTabView.swift */,
+				AA020014 /* DashboardView.swift */,
+				AA020015 /* SetupGuideView.swift */,
+				AA020016 /* DeviceHealthView.swift */,
+				AA020017 /* HistoryView.swift */,
+				AA020018 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA040009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA020000 /* TetherAssistant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA040010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA020019 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA050001 /* TetherAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA060001 /* Build configuration list for PBXNativeTarget "TetherAssistant" */;
+			buildPhases = (
+				AA070001 /* Sources */,
+				AA030001 /* Frameworks */,
+				AA080001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TetherAssistant;
+			productName = TetherAssistant;
+			productReference = AA020000 /* TetherAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA050001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA060002 /* Build configuration list for PBXProject "TetherAssistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA040001;
+			productRefGroup = AA040009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA050001 /* TetherAssistant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA080001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA070001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA010001 /* TetherAssistantApp.swift in Sources */,
+				AA010002 /* AppContainer.swift in Sources */,
+				AA010003 /* Theme.swift in Sources */,
+				AA010004 /* ThermalState.swift in Sources */,
+				AA010005 /* BatterySnapshot.swift in Sources */,
+				AA010006 /* NetworkSnapshot.swift in Sources */,
+				AA010007 /* TetherSession.swift in Sources */,
+				AA010008 /* ThermalMonitorService.swift in Sources */,
+				AA010009 /* BatteryMonitorService.swift in Sources */,
+				AA010010 /* NetworkDiagnosticsService.swift in Sources */,
+				AA010011 /* SessionRepository.swift in Sources */,
+				AA010012 /* DashboardViewModel.swift in Sources */,
+				AA010013 /* MainTabView.swift in Sources */,
+				AA010014 /* DashboardView.swift in Sources */,
+				AA010015 /* SetupGuideView.swift in Sources */,
+				AA010016 /* DeviceHealthView.swift in Sources */,
+				AA010017 /* HistoryView.swift in Sources */,
+				AA010018 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA090001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA090002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA090003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TetherAssistant/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetherassistant.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		AA090004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TetherAssistant/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetherassistant.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA060001 /* Build configuration list for PBXNativeTarget "TetherAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA090003 /* Debug */,
+				AA090004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA060002 /* Build configuration list for PBXProject "TetherAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA090001 /* Debug */,
+				AA090002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA000001 /* Project object */;
+}
+

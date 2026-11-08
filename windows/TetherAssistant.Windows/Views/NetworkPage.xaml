@@ -1,0 +1,48 @@
+<Page
+    x:Class="TetherAssistant.Windows.Views.NetworkPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:TetherAssistant.Windows.ViewModels">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Spacing="20" MaxWidth="1000" HorizontalAlignment="Left">
+            <TextBlock Text="Network Interface Details" FontSize="24" FontWeight="Bold" />
+
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1" CornerRadius="8" Padding="20">
+                <StackPanel Spacing="16">
+                    <Grid RowSpacing="12">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="IPv4 Address:" FontWeight="SemiBold" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{x:Bind ViewModel.Adapter.IpAddress, Mode=OneWay}" />
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Subnet Mask:" FontWeight="SemiBold" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{x:Bind ViewModel.Adapter.SubnetMask, Mode=OneWay}" />
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Default Gateway:" FontWeight="SemiBold" />
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="{x:Bind ViewModel.Adapter.GatewayAddress, Mode=OneWay}" />
+
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="DNS Server:" FontWeight="SemiBold" />
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{x:Bind ViewModel.Adapter.DnsServer, Mode=OneWay}" />
+
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Interface Speed:" FontWeight="SemiBold" />
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="{x:Bind ViewModel.Adapter.SpeedFormatted, Mode=OneWay}" />
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+

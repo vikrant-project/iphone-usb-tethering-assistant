@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TelemetrySample",
+  "type": "object",
+  "properties": {
+    "timestampUtc": { "type": "string", "format": "date-time" },
+    "downloadSpeedMbps": { "type": "number", "minimum": 0.0 },
+    "uploadSpeedMbps": { "type": "number", "minimum": 0.0 },
+    "totalBytesReceived": { "type": "integer", "minimum": 0 },
+    "totalBytesSent": { "type": "integer", "minimum": 0 },
+    "sessionDownloadedMB": { "type": "number", "minimum": 0.0 },
+    "sessionUploadedMB": { "type": "number", "minimum": 0.0 },
+    "sessionDurationSeconds": { "type": "number", "minimum": 0.0 }
+  },
+  "required": [
+    "timestampUtc",
+    "downloadSpeedMbps",
+    "uploadSpeedMbps",
+    "totalBytesReceived",
+    "totalBytesSent",
+    "sessionDownloadedMB",
+    "sessionUploadedMB",
+    "sessionDurationSeconds"
+  ]
+}
+

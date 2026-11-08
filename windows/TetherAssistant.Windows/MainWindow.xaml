@@ -1,0 +1,26 @@
+<Window
+    x:Class="TetherAssistant.Windows.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="iPhone USB Tethering Assistant">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <NavigationView x:Name="NavView"
+                        IsBackButtonVisible="Collapsed"
+                        PaneDisplayMode="Left"
+                        ItemInvoked="NavView_ItemInvoked"
+                        Loaded="NavView_Loaded">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Dashboard" Tag="Dashboard" Icon="Home" />
+                <NavigationViewItem Content="Network" Tag="Network" Icon="World" />
+                <NavigationViewItem Content="Diagnostics" Tag="Diagnostics" Icon="Repair" />
+            </NavigationView.MenuItems>
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Content="Settings" Tag="Settings" Icon="Setting" />
+            </NavigationView.FooterMenuItems>
+
+            <Frame x:Name="ContentFrame" Margin="16" />
+        </NavigationView>
+    </Grid>
+</Window>
+

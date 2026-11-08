@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SessionRecord",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "startTimeUtc": { "type": "string", "format": "date-time" },
+    "endTimeUtc": { "type": ["string", "null"], "format": "date-time" },
+    "bytesReceived": { "type": "integer", "minimum": 0 },
+    "bytesSent": { "type": "integer", "minimum": 0 },
+    "peakDownloadSpeedMbps": { "type": "number", "minimum": 0.0 },
+    "adapterName": { "type": "string" }
+  },
+  "required": [
+    "id",
+    "startTimeUtc",
+    "bytesReceived",
+    "bytesSent",
+    "peakDownloadSpeedMbps",
+    "adapterName"
+  ]
+}
+

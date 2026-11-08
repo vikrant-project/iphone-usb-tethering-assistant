@@ -1,0 +1,46 @@
+name: Build Windows Companion
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    name: Build & Package Windows Companion
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Dependencies
+        run: dotnet restore windows/TetherAssistant.Windows/TetherAssistant.Windows.csproj
+
+      - name: Build Solution
+        run: dotnet build windows/TetherAssistant.Windows/TetherAssistant.Windows.csproj -c Release --no-restore
+
+      - name: Publish Self-Contained Executable
+        run: |
+          dotnet publish windows/TetherAssistant.Windows/TetherAssistant.Windows.csproj `
+            -c Release `
+            -r win-x64 `
+            --self-contained true `
+            -p:PublishSingleFile=true `
+            -p:IncludeNativeLibrariesForSelfExtract=true `
+            -p:WindowsAppSDKSelfContained=true `
+            -o dist/windows
+
+      - name: Upload Windows Distributable Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TetherAssistant-Windows-x64
+          path: dist/windows/
+          retention-days: 14
